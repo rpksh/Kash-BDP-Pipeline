@@ -3,7 +3,7 @@
 ## What is it ?
 BDP stands for Build Deploy Promote.  
 It is Build and Deployment Pipeline as Code.
-This is not a complete CI/CD system, rather this is a set of three building blocks made up of jenkinsfile. You can use these block for your application and combine with your test suites(unit tests, regression tests,stress tests) to build your own CI/CD.
+This is a set of three building blocks made up of declearative jenkinsfile,when combined other components - test suite,vulnerability scanning,etc., will become a complete CI/CD system of your choice. You can use these block for your application and combine with your test suites(unit tests, regression tests,stress tests) to build your own CI/CD.
 Three building blocks are namely build, deploy and promote.
 This pipeline can be used to dockerize the application and deploy in kubernetes platform
 provided by various cloud providers - gcp,aws.(other clouds coming soon)
