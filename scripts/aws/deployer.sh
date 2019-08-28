@@ -9,7 +9,9 @@ set -o nounset
 if [ "${VERBOSE}" == "true" ] ; then
 set -o xtrace
 fi
-
+if [ ${#HELMS_EXTRA_OPS} -eq 0 ] ; then
+HELMS_EXTRA_OPS="  "
+fi
 export REGISTRY="${ECR_AWS_ACCOUNT_ID}.dkr.ecr.${ECR_AWS_REGION}.amazonaws.com"
 export AWS_SHARED_CREDENTIALS_FILE=${SA_FILE}
 
