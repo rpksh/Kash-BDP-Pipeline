@@ -9,7 +9,9 @@ set -o nounset
 if [ "${VERBOSE}" == "true" ] ; then
 set -o xtrace
 fi
-
+if [ ${#HELMS_EXTRA_OPS} -eq 0 ] ; then
+HELMS_EXTRA_OPS="  "
+fi
 export REGISTRY="gcr.io/${PROJECTID}"
 
 echo "=============================================================================="
