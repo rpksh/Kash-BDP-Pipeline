@@ -17,7 +17,7 @@ case ${SRC_CLOUD} in
      export SRC_REGISTRY="gcr.io/${SRC_PROJECTID}"
      ;;
   *)
-    echo "${SRC_CLOUD} is supported"
+    echo "${SRC_CLOUD} is not supported"
     exit 1
     ;;
 esac
